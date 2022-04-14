@@ -1,6 +1,7 @@
 package test.exercise;
 
 import main.exercise.CounterThread;
+import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -22,6 +23,7 @@ public class CounterThreadTest {
 	private static List<Integer> threadsafe_targetList =
 			Collections.synchronizedList(new ArrayList<Integer>());
 
+	@Test
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 

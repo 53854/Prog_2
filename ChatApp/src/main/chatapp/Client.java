@@ -40,7 +40,7 @@ public class Client {
 				if (input.hasNextLine()) {
 					String msg = input.nextLine();
 					if(!msg.matches("^"+username+":")) {
-						System.out.println(msg);
+						System.out.println("" + msg);
 					}
 				}
 			}

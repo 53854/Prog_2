@@ -1,10 +1,13 @@
 package test.exercise;
 
 import main.exercise.TimeThread;
+import org.junit.jupiter.api.Test;
 
 import java.util.Scanner;
 
 public class TimeThreadTest {
+
+	@Test
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 

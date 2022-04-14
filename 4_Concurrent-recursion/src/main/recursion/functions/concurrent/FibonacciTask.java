@@ -9,7 +9,7 @@ public class FibonacciTask extends RecursiveTask<Long> {
 	private final long n;
 	private final long threshold;
 
-	FibonacciTask(final long n, final long threshold) {
+	public FibonacciTask(final long n, final long threshold) {
 		this.n = n;
 		this.threshold = threshold;
 	}
