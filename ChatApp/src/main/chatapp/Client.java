@@ -39,8 +39,8 @@ public class Client {
 			while (socket.isConnected()) {
 				if (input.hasNextLine()) {
 					String msg = input.nextLine();
-					if(!msg.matches("^"+username+":")) {
-						System.out.println("" + msg);
+					if(!msg.matches("^<"+username+":>")) {
+						System.out.println(msg);
 					}
 				}
 			}
