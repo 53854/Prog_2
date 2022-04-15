@@ -1,4 +1,4 @@
-package main.chatapp;
+package main.server;
 
 import java.io.*;
 import java.net.Socket;
@@ -33,7 +33,7 @@ public class ConnectionThread extends Thread {
 
 			initConnection();
 		} catch (IOException e){
-			// Dedd
+			e.printStackTrace();
 		}
 	}
 

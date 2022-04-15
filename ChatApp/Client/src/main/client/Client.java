@@ -1,4 +1,4 @@
-package main.chatapp;
+package main.client;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,8 +39,8 @@ public class Client {
 			while (socket.isConnected()) {
 				if (input.hasNextLine()) {
 					String msg = input.nextLine();
-					if(!msg.matches("^<"+username+":>")) {
-						System.out.println(msg);
+					if(!msg.matches("^<"+this.username+":>")) {
+						System.out.println("from reader:" + msg);
 					}
 				}
 			}

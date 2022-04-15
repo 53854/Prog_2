@@ -1,4 +1,4 @@
-package main.chatapp;
+package main.server;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -35,22 +35,21 @@ public class Server {
 				System.out.println("new incoming connection");
 
 				ConnectionThread ct = new ConnectionThread(clientSocket, writerThread, messages);
-				ct.start();
 				connections.add(ct);
+				ct.start();
 			}
 		} catch (IOException e) {
-			// end
+			e.printStackTrace();
 		}
 
 	}
 
 	public static void main(String[] args) {
-
 		try {
 			Server sv = new Server(1234, 20);
 			sv.start();
 		} catch (IOException e) {
-			// die
+			e.printStackTrace();
 		}
 	}
 }
