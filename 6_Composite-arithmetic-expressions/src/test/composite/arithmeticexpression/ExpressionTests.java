@@ -2,7 +2,11 @@ package test.composite.arithmeticexpression;
 
 import main.composite.arithmeticexpression.Addition;
 import main.composite.arithmeticexpression.Constant;
+import main.composite.arithmeticexpression.Division;
 import main.composite.arithmeticexpression.Expression;
+import main.composite.arithmeticexpression.Multiplication;
+import main.composite.arithmeticexpression.Subtraction;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.logging.Logger;
@@ -26,6 +30,62 @@ public class ExpressionTests {
 		long actualResult = addiTest.evaluate();
 
 		assertEquals(expectedResult,actualResult);
+	}
+	
+	@Test
+	void testSubtraction() {
+		//Arrange
+		Expression a = new Constant(10);
+		Expression b = new Constant(5);
+		Expression c = new Constant(2);
+		Expression d = new Subtraction(b,c);
+		Expression subTest = new Subtraction(a,d);
+		
+		final var expectedResult = 7;
+		
+		//Act
+		
+		final var actualResult = subTest.evaluate();
+		
+		//Assert
+		assertEquals(expectedResult, actualResult);
+		
+	}
+	
+	@Test
+	void testMultiplication() {
+		//Arrange
+		Expression a = new Constant(6);
+		Expression b = new Constant(2);
+		Expression c = new Constant(2);
+		Expression d = new Multiplication(a,b);
+		Expression multiTest = new Multiplication(c,d);
+		
+		final var expectedResult = 24;
+		
+		//Act
+		final var actualResult = multiTest.evaluate();
+		
+		//Assert
+		assertEquals(expectedResult, actualResult);
+	}
+	
+	@Test
+	void testDivision() {
+		//Arrange
+		Expression a = new Constant(60);
+		Expression b = new Constant(10);
+		Expression c = new Constant(2);
+		Expression d = new Division(a,b);
+		Expression diviTest = new Division(d,c);
+		
+		final var expectedResult = 3;
+		
+		//Act
+		final var actualResult = diviTest.evaluate();
+		
+		//Assert
+		assertEquals(expectedResult, actualResult);
 	}
 
 
