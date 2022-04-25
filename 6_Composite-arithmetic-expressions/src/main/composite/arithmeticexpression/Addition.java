@@ -1,6 +1,6 @@
 package main.composite.arithmeticexpression;
 
-public class Addition extends Operation{
+public class Addition extends Operation {
 
     public Addition(Expression val_one, Expression val_two) {
         super(val_one, val_two);
