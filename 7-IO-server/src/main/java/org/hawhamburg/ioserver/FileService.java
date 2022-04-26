@@ -15,8 +15,10 @@ public class FileService {
     public String readFile(final String fileName) throws IOException {
 
         // TODO: Change my implementation by using a BufferedReader instead
-        FileReader in = new FileReader((resourcesDirectory.resolve(fileName).toString()));
-        BufferedReader br = new BufferedReader(in);
+        // FileReader in = new FileReader((resourcesDirectory.resolve(fileName).toString()));
+        // BufferedReader br = new BufferedReader(in);
+
+        BufferedReader br = Files.newBufferedReader(resourcesDirectory.resolve(fileName));
 
         StringBuilder fileContent = new StringBuilder("");
         String nextLine = br.readLine();
@@ -26,7 +28,7 @@ public class FileService {
         }
 
         br.close();
-        in.close();
+        //in.close();
 
         return fileContent.toString();
         //return Files.readString(resourcesDirectory.resolve(fileName));
@@ -35,13 +37,14 @@ public class FileService {
     public void writeFile(final String fileName, final String text) throws IOException {
 
         // TODO: Change my implementation by using a BufferedWriter instead
-        FileWriter out = new FileWriter((resourcesDirectory.resolve(fileName).toString()));
-        BufferedWriter bw = new BufferedWriter(out);
+        //FileWriter out = new FileWriter((resourcesDirectory.resolve(fileName).toString()));
+        BufferedWriter bw = Files.newBufferedWriter(resourcesDirectory.resolve(fileName));
+
 
         bw.write(text);
 
         bw.close();
-        out.close();
+        //out.close();
 
         //Files.writeString(resourcesDirectory.resolve(fileName), text);
     }
