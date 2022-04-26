@@ -13,7 +13,6 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Collections;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -22,17 +21,15 @@ import java.util.stream.Stream;
 public class FileController {
 
     private final FileService fileService;
-
+    private final Path resourcesDirectory = Paths.get("src", "main", "resources");
     public FileController(final FileService fileService) {
         this.fileService = fileService;
     }
 
+
     @GetMapping("files/")
     public ResponseEntity<Set<String>> getFileNames() {
         // TODO: Implement me
-
-        Path resourcesDirectory = Paths.get("src", "main", "resources");
-
         Set<String> content = Stream.of(resourcesDirectory.toFile().listFiles())
                 .filter(file -> !file.isDirectory())
                 .map(File::getName)
@@ -53,7 +50,6 @@ public class FileController {
         } catch (final NoSuchFileException e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-
         } catch (final IOException e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
@@ -69,6 +65,17 @@ public class FileController {
         } catch (final IOException e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
+    @DeleteMapping("files/{fileName}")
+    public ResponseEntity<String> deleteFile(@PathVariable final String fileName){
+        try {
+            Files.delete(resourcesDirectory.resolve(fileName));
+            return ResponseEntity.ok().build();
+        } catch (IOException e){
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
 }
