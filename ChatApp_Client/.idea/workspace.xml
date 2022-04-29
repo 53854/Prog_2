@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ChatApp_Client:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1d0607c6-ca2a-4a7c-82ef-923bbd698d8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ChatApp_Client_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApp_Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ChatApp_Client/main/client/Client$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ChatApp_Client/main/client/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatApp_Server/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatApp_Server/.idea/artifacts/ChatApp_Server_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatApp_Server/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatApp_Server/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatApp_Server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatApp_Server/ChatApp_Server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatApp_Server/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatApp_Server/src/main/server/ConnectionThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatApp_Server/src/main/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatApp_Server/src/main/server/WriterThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatApplication.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatApplication/client/Client$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatApplication/client/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatApplication/server/ConnectionThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatApplication/server/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatApplication/server/WriterThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/src/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/src/server/ConnectionThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/src/server/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/src/server/WriterThread.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28RrFzkmBiZGgCNTRaSy3qfgzVg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main.client" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.client.Client" />
+      <module name="ChatApp_Client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d0607c6-ca2a-4a7c-82ef-923bbd698d8c" name="Changes" comment="" />
+      <created>1651190140779</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651190140779</updated>
+      <workItem from="1651190142775" duration="930000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
